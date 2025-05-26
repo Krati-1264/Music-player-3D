@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">3D Music Player</h1>
+
+      <div class="player glass">
+        <audio id="player" controls></audio>
+
+        <div class="player__controls">
+          <button id="prevBtn" class="player__button">
+            ⏮️
+          </button>
+          <button id="playBtn" class="player__button">
+            ▶️
+          </button>
+          <button id="pauseBtn" class="player__button">
+            ⏸️
+          </button>
+          <button id="nextBtn" class="player__button">
+            ⏭️
+          </button>
+        </div>
+
+        <div class="player__progress">
+          <div class="player__progress-bar"></div>
+        </div>
+      </div>
+
+      <input type="file" id="audioInput" multiple accept="audio/*" />
+      <ul class="playlist" id="playlist"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
